@@ -28,4 +28,4 @@
 ## 💪 Demo
 
 - Deployed on Vercel
-- Deployed Link : [Click Here 🔗]()
+- Deployed Link : [Click Here]()
