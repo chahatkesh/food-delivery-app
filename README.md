@@ -1,10 +1,10 @@
 # food-delivery-app
+
 - Created Full Stack Food Delivery Website In React JS, MongoDB, Express, Node JS &amp; Stripe
 - All details are given below 👇
 
- <br/> 
+ <br/>
 
- 
 <div align="left">
   <h2>📚 TechStack Used</h2>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="30" alt="javascript logo"  />
@@ -23,34 +23,9 @@
   <img width="12" />
 </div>
 
-<br/> 
-
+<br/>
 
 ## 💪 Demo
+
 - Deployed on Vercel
 - Deployed Link : [Click Here 🔗]()
-  
-<br/> 
-
-
-## 💻  Run Locally
-Clone the project
-
-```bash
-  git clone https://github.com/chahatkesh/food-delivery-app.git
-```
-Go to the project directory
-
-```bash
-  cd client
-```
-Install dependencies
-
-```bash
-  npm install
-```
-Start the server
-
-```bash
-  npm run dev
-```
