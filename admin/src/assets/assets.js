@@ -16,4 +16,4 @@ export const assets = {
     list_icon
 }
 
-export const url = 'http://localhost:4000'
+export const url = 'https://food-del-backend-yqk3.onrender.com'
