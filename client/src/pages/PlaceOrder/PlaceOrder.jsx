@@ -1,7 +1,8 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect, useState, useRef } from "react";
 import "./PlaceOrder.css";
 import { StoreContext } from "../../context/StoreContext";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const PlaceOrder = () => {
   const { getTotalCartAmount, token, url, food_list, cartItems } =
@@ -50,6 +51,22 @@ const PlaceOrder = () => {
       alert("Error");
     }
   };
+
+  const navigate = useNavigate();
+  const { buttonRef } = useContext(StoreContext);
+
+  useEffect(() => {
+    if (!token) {
+      navigate("/cart");
+      setTimeout(() => {
+        if (buttonRef.current) {
+          buttonRef.current.click();
+        }
+      }, 100);
+    } else if (getTotalCartAmount() === 0) {
+      navigate("/cart");
+    }
+  }, [token, getTotalCartAmount, navigate]);
 
   return (
     <>
