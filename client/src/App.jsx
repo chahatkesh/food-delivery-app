@@ -8,6 +8,7 @@ import { useState } from "react";
 import LoginPopup from "./components/LoginPopup/LoginPopup";
 import Verify from "./pages/Verify/Verify";
 import MyOrders from "./pages/MyOrders/MyOrders";
+import FloatingCartButton from "./components/FloatingCartButton/FloatingCartButton";
 
 const App = () => {
   const [showLogin, setShowLogin] = useState(false);
@@ -25,6 +26,7 @@ const App = () => {
         </Routes>
       </div>
       <Footer />
+      <FloatingCartButton />
     </>
   );
 };

@@ -5,6 +5,11 @@ import fs from 'fs'
 // add food item
 
 const addFood = async (req, res) => {
+  
+  // Check if file was uploaded
+  if (!req.file) {
+    return res.json({ success: false, message: "No image file uploaded" });
+  }
 
   let image_filname = `${req.file.filename}`;
 
@@ -20,7 +25,13 @@ const addFood = async (req, res) => {
     res.json({ success: true, message: "Food Added" })
   } catch (error) {
     console.log(error)
-    res.json({ success: false, message: "Error" })
+    // If database save fails, clean up the uploaded file
+    if (req.file && req.file.filename) {
+      fs.unlink(`uploads/${req.file.filename}`, (err) => {
+        if (err) console.log("Error deleting file:", err);
+      });
+    }
+    res.json({ success: false, message: "Error adding food item" })
   }
 
 }
