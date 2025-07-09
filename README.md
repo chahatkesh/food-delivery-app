@@ -1,4 +1,4 @@
-![Tomato Repo Cover](https://github.com/user-attachments/assets/143b318e-a4ca-4b2e-b954-d1528b11c004)# Food Delivery App
+# Food Delivery App
 
 ![Tomato Repo Cover](https://github.com/user-attachments/assets/402b27dd-ae86-4bb5-94df-afdcb96660ec)
 
