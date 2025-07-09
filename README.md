@@ -1,4 +1,7 @@
-# 🍕 Food Delivery App
+![Tomato Repo Cover](https://github.com/user-attachments/assets/143b318e-a4ca-4b2e-b954-d1528b11c004)# Food Delivery App
+
+![Tomato Repo Cover](https://github.com/user-attachments/assets/402b27dd-ae86-4bb5-94df-afdcb96660ec)
+
 
 [![Node.js](https://img.shields.io/badge/Node.js-18.x-green?style=for-the-badge&logo=node.js)](https://nodejs.org/)
 [![React](https://img.shields.io/badge/React-18.3.1-blue?style=for-the-badge&logo=react)](https://reactjs.org/)
